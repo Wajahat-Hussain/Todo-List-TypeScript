@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        body{
+            background: #b3c6ff;
+        }
+        p{
+            display: inline;
+        }
+        p>span{
+            opacity: 0.5;
+        }
+        div.container{
+            margin-top: 2%;
+        }
+        div.jumbotron>p{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron alert-info text-center">
+        <p>ToDo List</p>
+    </div>
+    <div id="form" class="row">
+        <div class="panel panel-info">
+            <div class="panel-heading">Add Task</div>
+            <div class="panel-body">
+                <label>Enter Task:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="task"/>
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary" onclick="addTask()">Done</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lists">
+        
+
+    </div>
+    <div id="counter">
+
+    </div>
+</div>
+<script src="todo.js"></script>
+    <script src="bootstrap/jquery-3.0.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
